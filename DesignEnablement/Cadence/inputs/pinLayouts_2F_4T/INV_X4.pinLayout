@@ -1,0 +1,30 @@
+a   PNR Testcase Generation::  DesignName = INV_X4
+a   Output File:
+a   /home/eto10/PNR_PROBE/PNR_2F_4T/pinLayouts/INV_X4.pinLayout
+a   Width of Routing Clip    = 25
+a   Height of Routing Clip   = 2
+a   Tracks per Placement Row = 3
+a   Width of Placement Clip  = 25
+a   Tracks per Placement Clip = 2
+i   ===InstanceInfo===
+i   InstID Type Width
+i   ins1 PMOS 8
+i   ins0 NMOS 8
+i   ===PinInfo===
+i   PinID NetID InstID PinName PinDirection PinLength
+i   pin0 net0 ins0 S s 2
+i   pin1 net1 ins0 G s 2
+i   pin2 net2 ins0 D s 2
+i   pin3 net3 ins1 S s 2
+i   pin4 net1 ins1 G t 2
+i   pin5 net2 ins1 D t 2
+i   pin6 net3 ext VDD t -1 P
+i   pin7 net0 ext VSS t -1 P
+i   pin8 net1 ext I t -1 I
+i   pin9 net2 ext ZN t -1 O
+i   ===NetInfo===
+i   NetID N-PinNet PinList
+i   net0 2PinNet pin7 pin0
+i   net1 3PinNet pin8 pin4 pin1
+i   net2 3PinNet pin9 pin5 pin2
+i   net3 2PinNet pin6 pin3

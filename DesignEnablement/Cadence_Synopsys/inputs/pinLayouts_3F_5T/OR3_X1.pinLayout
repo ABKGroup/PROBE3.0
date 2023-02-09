@@ -1,0 +1,61 @@
+a   PNR Testcase Generation::  DesignName = OR3_X1
+a   Output File:
+a   /home/eto10/PNR_PROBE/PNR_3F_5T/pinLayouts/OR3_X1.pinLayout
+a   Width of Routing Clip    = 23
+a   Height of Routing Clip   = 2
+a   Tracks per Placement Row = 3.5
+a   Width of Placement Clip  = 23
+a   Tracks per Placement Clip = 3
+i   ===InstanceInfo===
+i   InstID Type Width
+i   ins7 PMOS 3
+i   ins6 PMOS 3
+i   ins5 PMOS 3
+i   ins1 PMOS 3
+i   ins4 NMOS 3
+i   ins3 NMOS 3
+i   ins2 NMOS 3
+i   ins0 NMOS 3
+i   ===PinInfo===
+i   PinID NetID InstID PinName PinDirection PinLength
+i   pin0 net0 ins4 D s 3
+i   pin1 net1 ins4 G s 3
+i   pin2 net2 ins4 S s 3
+i   pin3 net2 ins3 S t 3
+i   pin4 net3 ins3 G s 3
+i   pin5 net0 ins3 D t 3
+i   pin6 net0 ins2 D t 3
+i   pin7 net4 ins2 G s 3
+i   pin8 net2 ins2 S t 3
+i   pin9 net0 ins0 S t 3
+i   pin10 net2 ins0 G t 3
+i   pin11 net5 ins0 D s 3
+i   pin12 net6 ins7 D s 3
+i   pin13 net1 ins7 G t 3
+i   pin14 net7 ins7 S s 3
+i   pin15 net7 ins6 S t 3
+i   pin16 net3 ins6 G t 3
+i   pin17 net8 ins6 D s 3
+i   pin18 net8 ins5 S t 3
+i   pin19 net4 ins5 G t 3
+i   pin20 net2 ins5 D t 3
+i   pin21 net6 ins1 S t 3
+i   pin22 net2 ins1 G t 3
+i   pin23 net5 ins1 D t 3
+i   pin24 net6 ext VDD t -1 P
+i   pin25 net0 ext VSS t -1 P
+i   pin26 net4 ext A1 t -1 I
+i   pin27 net3 ext A2 t -1 I
+i   pin28 net1 ext A3 t -1 I
+i   pin29 net5 ext Z t -1 O
+i   ===NetInfo===
+i   NetID N-PinNet PinList
+i   net0 5PinNet pin25 pin9 pin6 pin5 pin0
+i   net1 3PinNet pin28 pin13 pin1
+i   net2 6PinNet pin22 pin20 pin10 pin8 pin3 pin2
+i   net3 3PinNet pin27 pin16 pin4
+i   net4 3PinNet pin26 pin19 pin7
+i   net5 3PinNet pin29 pin23 pin11
+i   net6 3PinNet pin24 pin21 pin12
+i   net7 2PinNet pin15 pin14
+i   net8 2PinNet pin18 pin17

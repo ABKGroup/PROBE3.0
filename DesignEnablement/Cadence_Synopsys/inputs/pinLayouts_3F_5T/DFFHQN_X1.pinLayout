@@ -1,0 +1,162 @@
+a   PNR Testcase Generation::  DesignName = DFFHQN_X1
+a   Output File:
+a   /home/eto10/PNR_6T_JOURNAL/pinLayouts_ASAP7/DFFHQN_X1.pinLayout
+a   Width of Routing Clip    = 49
+a   Height of Routing Clip   = 2
+a   Tracks per Placement Row = 3.5
+a   Width of Placement Clip  = 49
+a   Tracks per Placement Clip = 3
+i   ===InstanceInfo===
+i   InstID Type Width
+i   insMM25 PMOS 3
+i   insMM22 PMOS 2
+i   insMM21 PMOS 2
+i   insMM19 PMOS 1
+i   insMM18 PMOS 1
+i   insMM15 PMOS 1
+i   insMM13 PMOS 1
+i   insMM11 PMOS 1
+i   insMM10 PMOS 1
+i   insMM7 PMOS 1
+i   insMM1 PMOS 3
+i   insMM3 PMOS 3
+i   insMM24 NMOS 3
+i   insMM23 NMOS 2
+i   insMM20 NMOS 2
+i   insMM17 NMOS 1
+i   insMM16 NMOS 1
+i   insMM14 NMOS 1
+i   insMM12 NMOS 1
+i   insMM9 NMOS 1
+i   insMM8 NMOS 1
+i   insMM6 NMOS 1
+i   insMM5 NMOS 3
+i   insMM4 NMOS 3
+i   ===PinInfo===
+i   PinID NetID InstID PinName PinDirection PinLength
+i   pin0 net0 insMM24 S s 3
+i   pin1 net1 insMM24 G s 3
+i   pin2 net2 insMM24 D s 3
+i   pin3 net0 insMM23 S t 2
+i   pin4 net3 insMM23 G s 2
+i   pin5 net4 insMM23 D s 2
+i   pin6 net0 insMM20 S t 2
+i   pin7 net5 insMM20 G s 2
+i   pin8 net3 insMM20 D t 2
+i   pin9 net6 insMM17 S s 1
+i   pin10 net3 insMM17 G t 1
+i   pin11 net1 insMM17 D t 1
+i   pin12 net0 insMM16 D t 1
+i   pin13 net7 insMM16 G s 1
+i   pin14 net6 insMM16 S t 1
+i   pin15 net0 insMM14 S t 1
+i   pin16 net1 insMM14 G t 1
+i   pin17 net7 insMM14 D t 1
+i   pin18 net1 insMM12 S t 1
+i   pin19 net4 insMM12 G t 1
+i   pin20 net8 insMM12 D s 1
+i   pin21 net9 insMM9 S s 1
+i   pin22 net4 insMM9 G t 1
+i   pin23 net10 insMM9 D s 1
+i   pin24 net0 insMM8 D t 1
+i   pin25 net8 insMM8 G t 1
+i   pin26 net9 insMM8 S t 1
+i   pin27 net0 insMM6 D t 1
+i   pin28 net10 insMM6 G t 1
+i   pin29 net8 insMM6 S t 1
+i   pin30 net0 insMM5 D t 3
+i   pin31 net11 insMM5 G s 3
+i   pin32 net12 insMM5 S s 3
+i   pin33 net12 insMM4 S t 3
+i   pin34 net3 insMM4 G t 3
+i   pin35 net10 insMM4 D t 3
+i   pin36 net13 insMM25 S s 3
+i   pin37 net1 insMM25 G t 3
+i   pin38 net2 insMM25 D t 3
+i   pin39 net13 insMM22 S t 2
+i   pin40 net3 insMM22 G t 2
+i   pin41 net4 insMM22 D t 2
+i   pin42 net13 insMM21 S t 2
+i   pin43 net5 insMM21 G t 2
+i   pin44 net3 insMM21 D t 2
+i   pin45 net13 insMM19 D t 1
+i   pin46 net7 insMM19 G t 1
+i   pin47 net14 insMM19 S s 1
+i   pin48 net14 insMM18 S t 1
+i   pin49 net4 insMM18 G t 1
+i   pin50 net1 insMM18 D t 1
+i   pin51 net13 insMM15 S t 1
+i   pin52 net1 insMM15 G t 1
+i   pin53 net7 insMM15 D t 1
+i   pin54 net1 insMM13 S t 1
+i   pin55 net3 insMM13 G t 1
+i   pin56 net8 insMM13 D t 1
+i   pin57 net13 insMM11 D t 1
+i   pin58 net8 insMM11 G t 1
+i   pin59 net15 insMM11 S s 1
+i   pin60 net15 insMM10 S t 1
+i   pin61 net3 insMM10 G t 1
+i   pin62 net10 insMM10 D t 1
+i   pin63 net13 insMM7 D t 1
+i   pin64 net10 insMM7 G t 1
+i   pin65 net8 insMM7 S t 1
+i   pin66 net16 insMM1 S s 3
+i   pin67 net4 insMM1 G t 3
+i   pin68 net10 insMM1 D t 3
+i   pin69 net13 insMM3 D t 3
+i   pin70 net11 insMM3 G t 3
+i   pin71 net16 insMM3 S t 3
+i   pin72 net13 ext VDD t -1 P
+i   pin73 net0 ext VSS t -1 P
+i   pin74 net5 ext CLK t -1 I
+i   pin75 net11 ext D t -1 I
+i   pin76 net2 ext QN t -1 O
+i   ===NetInfo===
+i   NetID N-PinNet PinList
+i   net0 9PinNet pin73 pin30 pin27 pin24 pin15 pin12 pin6 pin3 pin0
+i   net1 8PinNet pin54 pin52 pin50 pin37 pin18 pin16 pin11 pin1
+i   net2 3PinNet pin76 pin38 pin2
+i   net3 8PinNet pin61 pin55 pin44 pin40 pin34 pin10 pin8 pin4
+i   net4 6PinNet pin67 pin49 pin41 pin22 pin19 pin5
+i   net5 3PinNet pin74 pin43 pin7
+i   net6 2PinNet pin14 pin9
+i   net7 4PinNet pin53 pin46 pin17 pin13
+i   net8 6PinNet pin65 pin58 pin56 pin29 pin25 pin20
+i   net9 2PinNet pin26 pin21
+i   net10 6PinNet pin68 pin64 pin62 pin35 pin28 pin23
+i   net11 3PinNet pin75 pin70 pin31
+i   net12 2PinNet pin33 pin32
+i   net13 9PinNet pin72 pin69 pin63 pin57 pin51 pin45 pin42 pin39 pin36
+i   net14 2PinNet pin48 pin47
+i   net15 2PinNet pin60 pin59
+i   net16 2PinNet pin71 pin66
+i   ===PartitionInfo===
+i   InstID Type PartitionGroup
+i   insMM25 PMOS 1
+i   insMM22 PMOS 2
+i   insMM21 PMOS 2
+i   insMM19 PMOS 3
+i   insMM18 PMOS 3
+i   insMM15 PMOS 3
+i   insMM13 PMOS 3
+i   insMM11 PMOS 4
+i   insMM10 PMOS 4
+i   insMM7 PMOS 4
+i   insMM1 PMOS 5
+i   insMM3 PMOS 5
+i   insMM24 NMOS 1
+i   insMM23 NMOS 2
+i   insMM20 NMOS 2
+i   insMM17 NMOS 3
+i   insMM16 NMOS 3
+i   insMM14 NMOS 3
+i   insMM12 NMOS 3
+i   insMM9 NMOS 4
+i   insMM8 NMOS 4
+i   insMM6 NMOS 4
+i   insMM5 NMOS 5
+i   insMM4 NMOS 5
+i   ===M2TrackAssignInfo===
+i   NetID Track
+i   net3 4
+i   net4 0

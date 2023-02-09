@@ -1,0 +1,298 @@
+*
+*
+*
+*                       LINUX           Fri Feb  3 22:35:59 2023
+*
+*
+*
+*  PROGRAM  advgen
+*
+*  Name           : advgen - Quantus - (64-bit)
+*  Version        : 21.1.0-p101
+*  Build Date     : Wed Mar 17 18:53:08 PDT 2021
+*
+*  HSPICE LIBRARY
+*
+*
+*
+
+*
+.SUBCKT AOI22_X2_6T_2F_45CPP_24M0P_30M1P_24M2P_2MPO_ET_M0 A1 B2 VSS A2 VDD ZN B1
+*
+*
+*  caps2d version: 10
+*
+*
+*       TRANSISTOR CARDS
+*
+*
+MM0	VDD	B2#3	9#5	VDD	pmos_rvt	nfin=2
+MM1	9#4	B2#1	VDD	VDD	pmos_rvt	nfin=2
+MM2	VDD	B1#3	9#4	VDD	pmos_rvt	nfin=2
+MM3	9#3	B1#1	VDD	VDD	pmos_rvt	nfin=2
+MM4	ZN#5	A1#3	9#3	VDD	pmos_rvt	nfin=2
+MM5	9#2	A1#1	ZN#5	VDD	pmos_rvt	nfin=2
+MM6	ZN#3	A2#3	9#2	VDD	pmos_rvt	nfin=2
+MM7	9	A2#1	ZN#3	VDD	pmos_rvt	nfin=2
+MM8	VSS	B2#3	10#3	VSS	nmos_rvt	nfin=2
+MM9	10#2	B2#1	VSS	VSS	nmos_rvt	nfin=2
+MM10	ZN#1	B1#3	10#2	VSS	nmos_rvt	nfin=2
+MM11	10	B1#1	ZN#1	VSS	nmos_rvt	nfin=2
+MM12	VSS	A2#3	7#3	VSS	nmos_rvt	nfin=2
+MM13	7#2	A2#1	VSS	VSS	nmos_rvt	nfin=2
+MM14	ZN#6	A1#5	7#2	VSS	nmos_rvt	nfin=2
+MM15	7	A1#4	ZN#6	VSS	nmos_rvt	nfin=2
+*
+*
+*       RESISTOR AND CAP/DIODE CARDS
+*
+Rj1	A1#1	A1#2	M0	    0.4757
+Rj2	A1#2	A1#3	M0	    0.2379
+Rj3	A1#4	A1#5	M0	    0.7136
+Rj4	A1#5	A1#6	M0	    0.2379
+Rj5	B2#1	B2#2	M0	    0.4757
+Rj6	B2#2	B2#3	M0	    0.2379
+Rj7	A2#1	A2#2	M0	    0.4757
+Rj8	A2#2	A2#3	M0	    0.2379
+Rj13	ZN#1	ZN#2	M0	    0.1189
+Rj14	ZN#3	ZN#4	M0	    0.5946
+Rj15	ZN#4	ZN#5	M0	    0.8325
+Rj16	ZN#6	ZN#7	M0	    0.1189
+Rj30	B1#1	B1#3	M0	    0.7136
+Rj33	9	9#2	M0	    1.4271
+Rj34	9#2	9#3	M0	    1.4271
+Rj35	9#3	9#4	M0	    1.4271
+Rj36	9#4	9#5	M0	    1.4271
+Rj31	10	10#2	M0	    1.4271
+Rj32	10#2	10#3	M0	    1.4271
+Rj37	7	7#2	M0	    1.4271
+Rj38	7#2	7#3	M0	    1.4271
+Ri1	A1#2	A1#8	M1	    5.0422
+Ri2	A1#6	A1#10	M1	    5.0845
+Ri3	B2	B2#2	M1	    5.0211
+Ri4	A2	A2#2	M1	    5.0422
+Ri7	ZN#2	ZN#9	M1	    5.0000
+Ri8	ZN#4	ZN#11	M1	    5.1052
+Ri9	ZN#7	ZN#13	M1	    5.0000
+Ri16	B1	B1#1	M1	    5.0211
+Rh1	A1#10	A1	M2	    0.2044
+Rh2	A1	A1#8	M2	    0.2044
+Rh3	ZN#13	ZN#11	M2	    0.2892
+Rh4	ZN#11	ZN	M2	2.829e-02
+Rh5	ZN	ZN#9	M2	    0.3175
+*
+*       CAPACITOR CARDS
+*
+*
+C1	10#2	B2#1	cmodel	1.00745e-18
+C2	A1	ZN	cmodel	7.01419e-19
+C3	A1	ZN#11	cmodel	5.47799e-18
+C4	B1#1	ZN#5	cmodel	3.12817e-19
+C5	10#3	B2#2	cmodel	3.94673e-19
+C6	A2#1	ZN#3	cmodel	8.29034e-19
+C7	A1	ZN#4	cmodel	7.7372e-21
+C8	A1	A2#2	cmodel	5.14611e-19
+C9	ZN#9	B2	cmodel	3.7674e-19
+C10	A1#2	9#3	cmodel	3.21685e-19
+C11	B1	A2	cmodel	2.72092e-20
+C12	B2	B2#2	cmodel	1.76878e-18
+C13	A1#10	7#2	cmodel	2.26588e-18
+C14	B2	ZN#2	cmodel	6.69367e-19
+C15	A1#8	A1#3	cmodel	2.26229e-20
+C16	A1	7#3	cmodel	1.46676e-19
+C17	10#2	B1#3	cmodel	7.16933e-19
+C18	A1	7#2	cmodel	2.41403e-20
+C19	A1#2	ZN#5	cmodel	2.52796e-18
+C20	A1#6	A2#1	cmodel	2.70179e-19
+C21	A1	A2#3	cmodel	2.07309e-20
+C22	A1#8	A1#1	cmodel	4.66981e-20
+C23	10#2	B2#2	cmodel	2.18333e-19
+C24	A1	A2#1	cmodel	5.18273e-21
+C25	B2	9#5	cmodel	3.78861e-19
+C26	B2#3	9#5	cmodel	2.2583e-18
+C27	B2	10#3	cmodel	5.93085e-19
+C28	A1#8	ZN	cmodel	5.13215e-18
+C29	ZN#13	7#2	cmodel	1.63477e-19
+C30	ZN#9	B1	cmodel	1.32912e-18
+C31	ZN#4	A2	cmodel	1.97109e-18
+C32	ZN#2	10#2	cmodel	2.63068e-18
+C33	B2#3	B2	cmodel	5.77755e-19
+C34	A2	A1#6	cmodel	6.09894e-19
+C35	B2	B1#3	cmodel	1.90476e-19
+C36	9#2	ZN#4	cmodel	4.13452e-18
+C37	ZN#7	A2#1	cmodel	4.21975e-19
+C38	ZN#11	A1#1	cmodel	4.71794e-19
+C39	ZN#11	A2#3	cmodel	4.99948e-19
+C40	ZN	A1#2	cmodel	9.22256e-19
+C41	ZN#2	B1	cmodel	3.02285e-18
+C42	ZN#7	A1#5	cmodel	3.04352e-18
+C43	ZN	ZN#4	cmodel	2.83107e-20
+C44	ZN#11	A2#1	cmodel	5.48603e-20
+C45	A2	9#2	cmodel	1.84478e-18
+C46	B1	B1#1	cmodel	1.15374e-18
+C47	A2	ZN#3	cmodel	9.90998e-19
+C48	B1	ZN#4	cmodel	2.17748e-19
+C49	ZN#7	A1#4	cmodel	1.52555e-18
+C50	A2#2	ZN#3	cmodel	1.84761e-18
+C51	B1	A2#2	cmodel	1.27164e-19
+C52	A1#10	A2#1	cmodel	3.17702e-19
+C53	ZN	9#3	cmodel	1.79005e-19
+C54	A1#6	ZN#3	cmodel	6.62611e-19
+C55	B2#1	9#4	cmodel	2.88312e-18
+C56	ZN	ZN#5	cmodel	4.8952e-20
+C57	A1#10	ZN#11	cmodel	8.98693e-19
+C58	ZN	9#2	cmodel	4.77316e-20
+C59	ZN#9	ZN#2	cmodel	1.42834e-18
+C60	A1#10	A1#5	cmodel	8.49297e-21
+C61	ZN#9	B1#1	cmodel	1.58711e-19
+C62	B1	9#3	cmodel	2.02069e-18
+C63	B1#3	9#4	cmodel	3.35829e-18
+C64	B1	ZN#5	cmodel	2.93175e-19
+C65	ZN#13	A1#10	cmodel	4.44551e-18
+C66	ZN#2	ZN#11	cmodel	6.89231e-21
+C67	ZN#2	B2#1	cmodel	2.119e-19
+C68	A1#8	A1#2	cmodel	1.37944e-20
+C69	ZN	7#3	cmodel	5.44047e-20
+C70	ZN#13	A1#5	cmodel	4.24568e-20
+C71	ZN#2	B1#3	cmodel	2.99934e-18
+C72	A1#8	ZN#4	cmodel	5.39804e-22
+C73	A1#1	A2#3	cmodel	5.84125e-19
+C74	A1#2	ZN#11	cmodel	2.50285e-19
+C75	ZN#13	A1#4	cmodel	1.99627e-20
+C76	7#3	ZN#4	cmodel	7.23686e-19
+C77	ZN#11	ZN#4	cmodel	5.11206e-20
+C78	ZN#2	A1#3	cmodel	4.20279e-19
+C79	ZN#11	A2#2	cmodel	2.36858e-18
+C80	ZN	A1#3	cmodel	6.83813e-20
+C81	7#3	A1#1	cmodel	3.01071e-18
+C82	7#3	A2#2	cmodel	1.54332e-18
+C83	A2#2	A1#10	cmodel	3.67726e-19
+C84	ZN#2	B1#1	cmodel	1.4635e-18
+C85	ZN#9	9#4	cmodel	1.90522e-19
+C86	A1#10	A1#6	cmodel	7.41336e-21
+C87	A1#3	9#3	cmodel	8.47729e-19
+C88	7#2	A2#2	cmodel	5.91992e-19
+C89	ZN#9	9#3	cmodel	1.91561e-19
+C90	A1#10	ZN#7	cmodel	1.64465e-18
+C91	ZN#2	A1#2	cmodel	4.08449e-19
+C92	ZN#13	A1#6	cmodel	5.13949e-19
+C93	7#3	A2#3	cmodel	2.10866e-18
+C94	ZN#5	9#3	cmodel	1.25496e-18
+C95	ZN#13	ZN#7	cmodel	1.03736e-18
+C96	7#2	A1#6	cmodel	6.76941e-19
+C97	10#3	9#5	cmodel	4.90223e-19
+C98	ZN#4	B1#1	cmodel	1.47387e-19
+C99	A1#3	A1#2	cmodel	3.41237e-19
+C100	A1#1	ZN#5	cmodel	1.54385e-18
+C101	7#2	ZN#7	cmodel	2.63068e-18
+C102	ZN#9	10#2	cmodel	1.23597e-19
+C103	B2#1	B1#3	cmodel	7.51003e-19
+C104	ZN#11	9#2	cmodel	1.81129e-19
+C105	9#2	ZN#5	cmodel	2.04869e-18
+C106	A1#2	A2#3	cmodel	6.73904e-20
+C107	10#3	B2#3	cmodel	7.89119e-19
+C108	B2#2	9#5	cmodel	1.17311e-18
+C109	ZN#11	ZN#3	cmodel	4.193e-20
+C110	7#2	A2#1	cmodel	2.73165e-18
+C111	ZN#4	A2#2	cmodel	2.29473e-19
+C112	A1#1	ZN#4	cmodel	1.14626e-18
+C113	B2#2	9#4	cmodel	6.24823e-19
+C114	A2#3	ZN#4	cmodel	1.81738e-18
+C115	7#2	A1#5	cmodel	4.08104e-19
+C116	A2#2	A1#6	cmodel	2.34339e-19
+C117	9#2	ZN#3	cmodel	1.50762e-18
+C118	A1#8	7#3	cmodel	7.9997e-19
+C119	ZN#2	9#4	cmodel	5.38999e-19
+C120	10#2	9#4	cmodel	5.44692e-19
+C121	A2#2	ZN#7	cmodel	5.27257e-20
+C122	ZN#9	B1#3	cmodel	5.05839e-20
+C123	A1#6	ZN#7	cmodel	2.38712e-18
+C124	ZN#11	7#3	cmodel	7.15443e-19
+C125	A2#3	ZN#3	cmodel	2.74933e-19
+C126	ZN#9	A1#3	cmodel	8.84941e-20
+C127	ZN#11	7#2	cmodel	2.90233e-20
+C128	9#3	B1#1	cmodel	3.30594e-18
+C129	B1#3	VSS	cmodel	4.33339e-19
+C130	ZN#5	VSS	cmodel	4.9739e-19
+C131	7#2	9	cmodel	2.18622e-19
+C132	ZN#13	VSS	cmodel	1.64178e-18
+C133	ZN#11	9	cmodel	3.31235e-20
+C134	ZN#4	VDD	cmodel	4.53611e-19
+C135	7	VDD	cmodel	5.96582e-19
+C136	9#2	VSS	cmodel	8.77746e-19
+C137	A1#5	VDD	cmodel	8.8571e-19
+C138	10	B1#1	cmodel	8.45748e-19
+C139	B2#2	VSS	cmodel	2.48789e-19
+C140	A1#8	10	cmodel	8.44683e-19
+C141	A1	VSS	cmodel	6.09045e-19
+C142	9#2	VDD	cmodel	7.45372e-18
+C143	VSS	A1#3	cmodel	1.32465e-18
+C144	ZN#3	VSS	cmodel	3.68865e-19
+C145	ZN#9	VDD	cmodel	3.44021e-19
+C146	ZN#2	VSS	cmodel	2.3059e-18
+C147	B2	VSS	cmodel	2.02577e-18
+C148	A1#10	9	cmodel	7.16369e-21
+C149	A1#4	VDD	cmodel	1.58925e-18
+C150	VSS	A1#1	cmodel	4.78892e-19
+C151	B1#1	VSS	cmodel	4.31445e-19
+C152	A1#6	VDD	cmodel	4.81422e-19
+C153	A2#3	VSS	cmodel	2.01148e-19
+C154	10#3	VSS	cmodel	6.97394e-18
+C155	B2	VDD	cmodel	5.0036e-19
+C156	B1	10	cmodel	4.29578e-19
+C157	A1#2	VSS	cmodel	1.26212e-18
+C158	7	ZN#7	cmodel	1.52555e-18
+C159	A2	VSS	cmodel	4.09646e-19
+C160	A2#1	VSS	cmodel	4.73162e-19
+C161	ZN#13	9	cmodel	2.04028e-19
+C162	ZN#7	VDD	cmodel	7.20036e-19
+C163	ZN#11	VDD	cmodel	2.60691e-19
+C164	ZN#4	VSS	cmodel	1.152e-18
+C165	9	A1#6	cmodel	2.67869e-18
+C166	VDD	VSS	cmodel	2.6269e-17
+C167	A1#5	VSS	cmodel	3.46368e-19
+C168	10#2	VSS	cmodel	8.64502e-18
+C169	A2#2	VSS	cmodel	5.3807e-19
+C170	ZN	VSS	cmodel	6.15557e-19
+C171	A1#10	10	cmodel	3.52442e-20
+C172	A1#4	VSS	cmodel	1.51973e-18
+C173	A2	VDD	cmodel	8.43948e-19
+C174	A1#6	VSS	cmodel	7.81377e-19
+C175	A2#1	9	cmodel	1.01342e-18
+C176	B1	VSS	cmodel	1.23053e-18
+C177	10	7#3	cmodel	3.53169e-19
+C178	7	A1#4	cmodel	1.05008e-18
+C179	ZN#13	VDD	cmodel	4.02603e-19
+C180	ZN#7	VSS	cmodel	2.52439e-18
+C181	9	VSS	cmodel	1.47798e-18
+C182	7#3	VSS	cmodel	7.44359e-18
+C183	9#5	VDD	cmodel	5.18486e-18
+C184	10	VSS	cmodel	5.99895e-18
+C185	A1#5	9	cmodel	7.79701e-19
+C186	ZN	VDD	cmodel	3.40211e-19
+C187	7#2	VSS	cmodel	7.86851e-18
+C188	7	VSS	cmodel	7.31737e-18
+C189	ZN#2	VDD	cmodel	5.0036e-19
+C190	9#5	VSS	cmodel	1.72016e-18
+C191	B1	VDD	cmodel	8.60523e-19
+C192	ZN#9	VSS	cmodel	2.36286e-18
+C193	VDD	9#4	cmodel	7.52472e-18
+C194	A1#8	VSS	cmodel	2.24916e-18
+C195	ZN#3	9	cmodel	1.45206e-18
+C196	VDD	9	cmodel	5.80357e-18
+C197	B2#3	VSS	cmodel	9.9663e-19
+C198	ZN#13	7	cmodel	2.80183e-20
+C199	9#4	VSS	cmodel	1.04547e-18
+C200	10	9#3	cmodel	6.52952e-19
+C201	ZN#11	VSS	cmodel	7.61047e-19
+C202	9#3	VDD	cmodel	7.75162e-18
+C203	B2#1	VSS	cmodel	4.26783e-19
+C204	10	ZN#2	cmodel	1.4635e-18
+C205	A1#2	VDD	cmodel	2.85756e-19
+C206	ZN#9	10	cmodel	2.32019e-19
+C207	9#3	VSS	cmodel	8.85595e-19
+C208	A1#10	VSS	cmodel	1.8283e-18
+*
+*
+.ENDS AOI22_X2_6T_2F_45CPP_24M0P_30M1P_24M2P_2MPO_ET_M0
+*

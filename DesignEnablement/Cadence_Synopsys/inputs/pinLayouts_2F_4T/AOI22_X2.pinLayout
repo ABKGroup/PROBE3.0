@@ -1,0 +1,63 @@
+a   PNR Testcase Generation::  DesignName = AOI22_X2
+a   Output File:
+a   /home/eto10/PNR_PROBE/PNR_2F_4T/pinLayouts/AOI22_X2.pinLayout
+a   Width of Routing Clip    = 39
+a   Height of Routing Clip   = 2
+a   Tracks per Placement Row = 3
+a   Width of Placement Clip  = 39
+a   Tracks per Placement Clip = 2
+i   ===InstanceInfo===
+i   InstID Type Width
+i   ins7 PMOS 4
+i   ins6 PMOS 4
+i   ins4 PMOS 4
+i   ins5 PMOS 4
+i   ins3 NMOS 4
+i   ins2 NMOS 4
+i   ins0 NMOS 4
+i   ins1 NMOS 4
+i   ===PinInfo===
+i   PinID NetID InstID PinName PinDirection PinLength
+i   pin0 net0 ins3 S s 4
+i   pin1 net1 ins3 G s 4
+i   pin2 net2 ins3 D s 4
+i   pin3 net0 ins2 S t 4
+i   pin4 net3 ins2 G s 4
+i   pin5 net4 ins2 D s 4
+i   pin6 net2 ins1 D t 4
+i   pin7 net5 ins1 G s 4
+i   pin8 net6 ins1 S s 4
+i   pin9 net6 ins0 S t 4
+i   pin10 net7 ins0 G s 4
+i   pin11 net4 ins0 D t 4
+i   pin12 net8 ins7 S s 4
+i   pin13 net1 ins7 G t 4
+i   pin14 net9 ins7 D s 4
+i   pin15 net9 ins6 D t 4
+i   pin16 net3 ins6 G t 4
+i   pin17 net8 ins6 S t 4
+i   pin18 net8 ins5 S t 4
+i   pin19 net5 ins5 G t 4
+i   pin20 net4 ins5 D t 4
+i   pin21 net4 ins4 D t 4
+i   pin22 net7 ins4 G t 4
+i   pin23 net8 ins4 S t 4
+i   pin24 net9 ext VDD t -1 P
+i   pin25 net2 ext VSS t -1 P
+i   pin26 net7 ext A1 t -1 I
+i   pin27 net5 ext A2 t -1 I
+i   pin28 net3 ext B1 t -1 I
+i   pin29 net1 ext B2 t -1 I
+i   pin30 net4 ext ZN t -1 O
+i   ===NetInfo===
+i   NetID N-PinNet PinList
+i   net0 2PinNet pin3 pin0
+i   net1 3PinNet pin29 pin13 pin1
+i   net2 3PinNet pin25 pin6 pin2
+i   net3 3PinNet pin28 pin16 pin4
+i   net4 5PinNet pin30 pin21 pin20 pin11 pin5
+i   net5 3PinNet pin27 pin19 pin7
+i   net6 2PinNet pin9 pin8
+i   net7 3PinNet pin26 pin22 pin10
+i   net8 4PinNet pin23 pin18 pin17 pin12
+i   net9 3PinNet pin24 pin15 pin14

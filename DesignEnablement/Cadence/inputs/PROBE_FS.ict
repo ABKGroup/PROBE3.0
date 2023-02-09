@@ -1,0 +1,470 @@
+# This script was written and developed by ABKGroup students at UCSD. However, the underlying commands and reports are copyrighted by Cadence. 
+# We thank Cadence for granting permission to share our research to help promote and foster the next generation of innovators.
+
+# PROBE3.0
+# For QRCTechFile
+
+process	PROBE {	
+  background_dielectric_constant 1
+}
+
+substrate si_sub {
+  height -0.100
+  thickness 0.100
+  dielectric_constant 11.9
+}
+
+diffusion ACTIVE {	
+  thickness 0.060
+  resistivity 5e-5
+}
+
+conductor GATE {	
+  min_spacing 0.025
+  min_width 0.016
+  height 0.061
+  thickness 0.081
+  gate_forming_layer TRUE
+  #layer_type GATE
+  resistivity 1.167
+}
+
+dielectric diel_ACT {
+  conformal FALSE
+  thickness 0.061
+  height 0.000
+  dielectric_constant 3.9
+  delta_layer ACTIVE
+}
+
+dielectric diel_GATE {
+  conformal FALSE
+  thickness 0.081
+  height 0.061
+  dielectric_constant 3.9
+  delta_layer GATE
+}
+
+conductor M0 {
+  #r_sheet = 0.38
+  thickness 0.024
+  min_width 0.012
+  min_spacing 0.012
+  height 0.142
+  gate_forming_layer FALSE
+  resistivity 3.612
+}
+
+dielectric M0_diel {
+  conformal FALSE
+  thickness 0.024
+  height 0.142
+  dielectric_constant 3
+  delta_layer M0
+}
+
+dielectric M0_diel2 {
+  conformal FALSE
+  thickness 0.024
+  height 0.166
+  dielectric_constant 3
+  delta_layer M0
+}
+
+conductor M1 {
+  resistivity 15
+  thickness 0.030
+  min_width 0.015
+  min_spacing 0.015
+  height 0.190
+}
+
+dielectric M1_diel {
+  conformal FALSE
+  thickness 0.030
+  height 0.190
+  dielectric_constant 2.7
+  delta_layer M1
+}
+
+dielectric M1_diel2 {
+  conformal FALSE
+  thickness 0.030
+  height 0.220
+  dielectric_constant 2.7
+  delta_layer M1
+}
+
+conductor M2 {
+  resistivity 4.816
+  thickness 0.024
+  min_width 0.012
+  min_spacing 0.012
+  height 0.250
+}
+
+dielectric M2_diel {
+  conformal FALSE
+  thickness 0.024
+  height 0.250
+  dielectric_constant 2.7
+  delta_layer M2
+}
+
+dielectric M2_diel2 {
+  conformal FALSE
+  thickness 0.024
+  height 0.274
+  dielectric_constant 2.7
+  delta_layer M2
+}
+
+conductor M3 {
+  resistivity 4.816
+  thickness 0.024
+  min_width 0.012
+  min_spacing 0.012
+  height 0.298
+}
+
+dielectric M3_diel {
+  conformal FALSE
+  thickness 0.024
+  height 0.298
+  dielectric_constant 2.7
+  delta_layer M3
+}
+
+dielectric M3_diel2 {
+  conformal FALSE
+  thickness 0.024
+  height 0.322
+  dielectric_constant 2.7
+  delta_layer M3
+}
+
+conductor M4 {
+  resistivity 1.167
+  thickness 0.064
+  min_width 0.032
+  min_spacing 0.032
+  height 0.346
+}
+
+dielectric M4_diel {
+  conformal FALSE
+  thickness 0.064
+  height 0.346
+  dielectric_constant 2.5
+  delta_layer M4
+}
+
+dielectric M4_diel2 {
+  conformal FALSE
+  thickness 0.064
+  height 0.410
+  dielectric_constant 2.5
+  delta_layer M4
+}
+
+conductor M5 {
+  resistivity 1.167
+  thickness 0.064
+  min_width 0.032
+  min_spacing 0.032
+  height 0.474
+}
+
+dielectric M5_diel {
+  conformal FALSE
+  thickness 0.064
+  height 0.474
+  dielectric_constant 2.5
+  delta_layer M5
+}
+
+dielectric M5_diel2 {
+  conformal FALSE
+  thickness 0.064
+  height 0.538
+  dielectric_constant 2.5
+  delta_layer M5
+}
+
+conductor M6 {
+  resistivity 1.167
+  thickness 0.064
+  min_width 0.032
+  min_spacing 0.032
+  height 0.602
+}
+
+dielectric M6_diel {
+  conformal FALSE
+  thickness 0.064
+  height 0.602
+  dielectric_constant 2.5
+  delta_layer M6
+}
+
+dielectric M6_diel2 {
+  conformal FALSE
+  thickness 0.064
+  height 0.666
+  dielectric_constant 2.5
+  delta_layer M6
+}
+
+
+conductor M7 {
+  resistivity 1.167
+  thickness 0.064
+  min_width 0.032
+  min_spacing 0.032
+  height 0.730
+}
+
+dielectric M7_diel {
+  conformal FALSE
+  thickness 0.064
+  height 0.730
+  dielectric_constant 2.5
+  delta_layer M7
+}
+
+dielectric M7_diel2 {
+  conformal FALSE
+  thickness 0.064
+  height 0.794
+  dielectric_constant 2.5
+  delta_layer M7
+}
+
+conductor M8 {
+  resistivity 1.167
+  thickness 0.064
+  min_width 0.032
+  min_spacing 0.032
+  height 0.858
+}
+
+dielectric M8_diel {
+  conformal FALSE
+  thickness 0.064
+  height 0.858
+  dielectric_constant 2.5
+  delta_layer M8
+}
+
+dielectric M8_diel2 {
+  conformal FALSE
+  thickness 0.064
+  height 0.922
+  dielectric_constant 2.5
+  delta_layer M8
+}
+
+conductor M9 {
+  resistivity 1.167
+  thickness 0.064
+  min_width 0.032
+  min_spacing 0.032
+  height 0.986
+}
+
+dielectric M9_diel {
+  conformal FALSE
+  thickness 0.064
+  height 0.986
+  dielectric_constant 2.5
+  delta_layer M9
+}
+
+dielectric M9_diel2 {
+  conformal FALSE
+  thickness 0.064
+  height 1.050
+  dielectric_constant 2.5
+  delta_layer M9
+}
+
+conductor M10 {
+  resistivity 1.167
+  thickness 0.064
+  min_width 0.032
+  min_spacing 0.032
+  height 1.114
+}
+
+dielectric M10_diel {
+  conformal FALSE
+  thickness 0.064
+  height 1.114
+  dielectric_constant 2.5
+  delta_layer M10
+}
+
+dielectric M10_diel2 {
+  conformal FALSE
+  thickness 0.064
+  height 1.178
+  dielectric_constant 2.5
+  delta_layer M10
+}
+
+conductor M11 {
+  resistivity 1.167
+  thickness 0.064
+  min_width 0.032
+  min_spacing 0.032
+  height 1.242
+}
+
+dielectric M11_diel {
+  conformal FALSE
+  thickness 0.064
+  height 1.242
+  dielectric_constant 2.5
+  delta_layer M11
+}
+
+dielectric M11_diel2 {
+  conformal FALSE
+  thickness 0.064
+  height 1.306
+  dielectric_constant 2.5
+  delta_layer M11
+}
+
+#th 260nm --> r_sheet = 0.07307
+
+conductor M12 {
+  resistivity 0.0264
+  thickness 0.720
+  min_width 0.360
+  min_spacing 0.360
+  height 1.370
+}
+
+dielectric M12_diel {
+  conformal FALSE
+  thickness 0.720
+  height 1.370
+  dielectric_constant 2.5
+  delta_layer M12
+}
+
+dielectric M12_diel2 {
+  conformal FALSE
+  thickness 0.720
+  height 2.090
+  dielectric_constant 2.5
+  delta_layer M12
+}
+
+conductor M13 {
+  resistivity 0.0264
+  thickness 0.720
+  min_width 0.360
+  min_spacing 0.360
+  height 2.810
+}
+
+dielectric M13_diel {
+  conformal FALSE
+  thickness 0.720
+  height 2.810
+  dielectric_constant 2.5
+  delta_layer M13
+}
+
+via "CA" {
+  top_layer M0
+  bottom_layer GATE
+  contact_resistance 50
+}
+
+via V0 {
+  contact_resistance 50
+  bottom_layer M0
+  top_layer M1
+}
+
+
+via V1 {
+  contact_resistance 50
+  bottom_layer M1
+  top_layer M2
+}
+
+via V2 {
+  contact_resistance 50
+  bottom_layer M2
+  top_layer M3
+}
+
+via V3 {
+  contact_resistance 50
+  bottom_layer M3
+  top_layer M4
+}
+
+
+via V4 {
+  contact_resistance 5
+  bottom_layer M4
+  top_layer M5
+}
+
+
+via V5 {
+  contact_resistance 5
+  bottom_layer M5
+  top_layer M6
+}
+
+
+via V6 {
+  contact_resistance 5
+  bottom_layer M6
+  top_layer M7
+}
+
+
+via V7 {
+  contact_resistance 5
+  bottom_layer M7
+  top_layer M8
+}
+
+
+via V8 {
+  contact_resistance 5
+  bottom_layer M8
+  top_layer M9
+}
+via V9 {
+  contact_resistance 5
+  bottom_layer M9
+  top_layer M10
+}
+via V10 {
+  contact_resistance 5
+  bottom_layer M10
+  top_layer M11
+}
+
+via V11 {
+  contact_resistance 5
+  bottom_layer M11
+  top_layer M12
+}
+
+#P720 Via
+#Width 56n --> 0.4046 ohm
+#Width 360n --> 0.06294
+via V12 {
+  contact_resistance 0.06294
+  bottom_layer M12
+  top_layer M13
+}

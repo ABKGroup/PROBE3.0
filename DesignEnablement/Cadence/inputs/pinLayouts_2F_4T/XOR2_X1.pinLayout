@@ -1,0 +1,68 @@
+a   PNR Testcase Generation::  DesignName = XOR2_X1
+a   Output File:
+a   /home/eto10/PNR_PROBE/PNR_2F_4T/pinLayouts/XOR2_X1.pinLayout
+a   Width of Routing Clip    = 31
+a   Height of Routing Clip   = 2
+a   Tracks per Placement Row = 3
+a   Width of Placement Clip  = 31
+a   Tracks per Placement Clip = 2
+i   ===InstanceInfo===
+i   InstID Type Width
+i   ins9 PMOS 2
+i   ins8 PMOS 2
+i   ins5 PMOS 2
+i   ins3 PMOS 2
+i   ins4 PMOS 2
+i   ins7 NMOS 2
+i   ins6 NMOS 2
+i   ins2 NMOS 2
+i   ins0 NMOS 2
+i   ins1 NMOS 2
+i   ===PinInfo===
+i   PinID NetID InstID PinName PinDirection PinLength
+i   pin0 net0 ins7 D s 2
+i   pin1 net1 ins7 G s 2
+i   pin2 net2 ins7 S s 2
+i   pin3 net2 ins6 S t 2
+i   pin4 net3 ins6 G s 2
+i   pin5 net0 ins6 D t 2
+i   pin6 net0 ins2 D t 2
+i   pin7 net2 ins2 G t 2
+i   pin8 net4 ins2 S s 2
+i   pin9 net4 ins0 S t 2
+i   pin10 net3 ins0 G t 2
+i   pin11 net5 ins0 D s 2
+i   pin12 net5 ins1 S t 2
+i   pin13 net1 ins1 G t 2
+i   pin14 net0 ins1 D t 2
+i   pin15 net6 ins9 D s 2
+i   pin16 net1 ins9 G t 2
+i   pin17 net7 ins9 S s 2
+i   pin18 net7 ins8 S t 2
+i   pin19 net3 ins8 G t 2
+i   pin20 net2 ins8 D t 2
+i   pin21 net6 ins5 D t 2
+i   pin22 net2 ins5 G t 2
+i   pin23 net8 ins5 S s 2
+i   pin24 net4 ins3 D t 2
+i   pin25 net3 ins3 G t 2
+i   pin26 net8 ins3 S t 2
+i   pin27 net8 ins4 S t 2
+i   pin28 net1 ins4 G t 2
+i   pin29 net4 ins4 D t 2
+i   pin30 net6 ext VDD t -1 P
+i   pin31 net0 ext VSS t -1 P
+i   pin32 net3 ext A1 t -1 I
+i   pin33 net1 ext A2 t -1 I
+i   pin34 net4 ext Z t -1 O
+i   ===NetInfo===
+i   NetID N-PinNet PinList
+i   net0 5PinNet pin31 pin14 pin6 pin5 pin0
+i   net1 5PinNet pin33 pin28 pin16 pin13 pin1
+i   net2 5PinNet pin22 pin20 pin7 pin3 pin2
+i   net3 5PinNet pin32 pin25 pin19 pin10 pin4
+i   net4 5PinNet pin34 pin29 pin24 pin9 pin8
+i   net5 2PinNet pin12 pin11
+i   net6 3PinNet pin30 pin21 pin15
+i   net7 2PinNet pin18 pin17
+i   net8 3PinNet pin27 pin26 pin23

@@ -1,0 +1,41 @@
+a   PNR Testcase Generation::  DesignName = NOR2_X1
+a   Output File:
+a   /home/eto10/PNR_PROBE/PNR_2F_4T/pinLayouts/NOR2_X1.pinLayout
+a   Width of Routing Clip    = 21
+a   Height of Routing Clip   = 2
+a   Tracks per Placement Row = 3
+a   Width of Placement Clip  = 21
+a   Tracks per Placement Clip = 2
+i   ===InstanceInfo===
+i   InstID Type Width
+i   ins2 PMOS 2
+i   ins3 PMOS 2
+i   ins0 NMOS 2
+i   ins1 NMOS 2
+i   ===PinInfo===
+i   PinID NetID InstID PinName PinDirection PinLength
+i   pin0 net0 ins0 S s 2
+i   pin1 net1 ins0 G s 2
+i   pin2 net2 ins0 D s 2
+i   pin3 net0 ins1 S t 2
+i   pin4 net3 ins1 G s 2
+i   pin5 net2 ins1 D t 2
+i   pin6 net0 ins2 D t 2
+i   pin7 net1 ins2 G t 2
+i   pin8 net4 ins2 S s 2
+i   pin9 net4 ins3 S t 2
+i   pin10 net3 ins3 G t 2
+i   pin11 net5 ins3 D s 2
+i   pin12 net5 ext VDD t -1 P
+i   pin13 net2 ext VSS t -1 P
+i   pin14 net1 ext A1 t -1 I
+i   pin15 net3 ext A2 t -1 I
+i   pin16 net0 ext ZN t -1 O
+i   ===NetInfo===
+i   NetID N-PinNet PinList
+i   net0 4PinNet pin16 pin6 pin3 pin0
+i   net1 3PinNet pin14 pin7 pin1
+i   net2 3PinNet pin13 pin5 pin2
+i   net3 3PinNet pin15 pin10 pin4
+i   net4 2PinNet pin9 pin8
+i   net5 2PinNet pin12 pin11

@@ -1,0 +1,50 @@
+a   PNR Testcase Generation::  DesignName = OR2_X2
+a   Output File:
+a   /home/eto10/PNR_PROBE/PNR_2F_4T/pinLayouts/OR2_X2.pinLayout
+a   Width of Routing Clip    = 27
+a   Height of Routing Clip   = 2
+a   Tracks per Placement Row = 3
+a   Width of Placement Clip  = 27
+a   Tracks per Placement Clip = 2
+i   ===InstanceInfo===
+i   InstID Type Width
+i   ins5 PMOS 2
+i   ins4 PMOS 2
+i   ins1 PMOS 4
+i   ins3 NMOS 2
+i   ins2 NMOS 2
+i   ins0 NMOS 4
+i   ===PinInfo===
+i   PinID NetID InstID PinName PinDirection PinLength
+i   pin0 net0 ins3 D s 2
+i   pin1 net1 ins3 G s 2
+i   pin2 net2 ins3 S s 2
+i   pin3 net2 ins2 S t 2
+i   pin4 net3 ins2 G s 2
+i   pin5 net0 ins2 D t 2
+i   pin6 net4 ins0 D s 4
+i   pin7 net2 ins0 G t 4
+i   pin8 net0 ins0 S t 4
+i   pin9 net5 ins5 D s 2
+i   pin10 net1 ins5 G t 2
+i   pin11 net6 ins5 S s 2
+i   pin12 net6 ins4 S t 2
+i   pin13 net3 ins4 G t 2
+i   pin14 net2 ins4 D t 2
+i   pin15 net4 ins1 D t 4
+i   pin16 net2 ins1 G t 4
+i   pin17 net5 ins1 S t 4
+i   pin18 net5 ext VDD t -1 P
+i   pin19 net0 ext VSS t -1 P
+i   pin20 net3 ext A1 t -1 I
+i   pin21 net1 ext A2 t -1 I
+i   pin22 net4 ext Z t -1 O
+i   ===NetInfo===
+i   NetID N-PinNet PinList
+i   net0 4PinNet pin19 pin8 pin5 pin0
+i   net1 3PinNet pin21 pin10 pin1
+i   net2 5PinNet pin16 pin14 pin7 pin3 pin2
+i   net3 3PinNet pin20 pin13 pin4
+i   net4 3PinNet pin22 pin15 pin6
+i   net5 3PinNet pin18 pin17 pin9
+i   net6 2PinNet pin12 pin11

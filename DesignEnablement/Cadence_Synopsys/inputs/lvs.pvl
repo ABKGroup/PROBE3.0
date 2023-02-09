@@ -1,0 +1,256 @@
+// This script was written and developed by ABKGroup students at UCSD. However, the underlying commands and reports are copyrighted by Cadence. 
+// We thank Cadence for granting permission to share our research to help promote and foster the next generation of innovators.
+
+// Pegasus LVS RULE DECK for PROBE3.0
+// Created by Minsoo Kim (mik226@ucsd.edu)
+input_scale 4000;
+grid 1;
+unit -length u;
+text_depth -primary;
+mask_svdb_dir "svdb";
+
+layout_preserve_case -property yes
+
+lvs_power_name "vdd!" "VDD!" "vdd" "VDD"`
+lvs_ground_name vss! VSS! vss VSS
+
+lvs_cname yes -cell
+lvs_cname no -pin
+
+//lvs_reduce no -series_diodes
+//lvs_reduce no -series_mos
+
+lvs_ignore_ports no
+lvs_compare_port_names yes
+lvs_recognize_gates -none
+lvs_reduce_split_gates yes -semi_also
+
+virtual_connect -name "VDD" "VSS" -report yes
+
+layer_def ACTIVE 11;
+layer_def fin 2;
+layer_def well 1;
+layer_def P_SUB 3;
+layer_def p_substrate 102;
+layer_def Gcut 10;
+layer_def Nselect 12;
+layer_def Pselect 13;
+layer_def SLVT 97;
+layer_def LVT 98;
+layer_def GATE 7;
+layer_def Dummy 8;
+layer_def LISD 17;
+layer_def LIG 16;
+layer_def CA 14;
+layer_def M0 15;
+layer_def V0 18;
+layer_def M1 19;
+layer_def V1 21;
+layer_def M2 20;
+layer_def M3 30;
+layer_def M4 40;
+layer_def M5 50;
+layer_def M6 60;
+layer_def M7 70;
+layer_def M8 80;
+layer_def M9 90;
+layer_def V2 25;
+layer_def V3 35;
+layer_def V4 45;
+layer_def V5 55;
+layer_def V6 65;
+layer_def V7 75;
+layer_def V8 85;
+layer_def V9 95;
+layer_def pad 96 ;
+layer_def SRAMDRC 99;
+layer_def SRAMVT 110;
+layer_def SDT 88;
+
+layer_def well_PIN 17251;
+layer_map 1 -texttype 251 17251;
+text_layer well_PIN;
+port -text_layer well_PIN;
+
+layer_def P_SUB_PIN 18251;
+layer_map 3 -texttype 251 18251;
+text_layer P_SUB_PIN;
+port -text_layer P_SUB_PIN;
+
+layer_def M0_PIN 15251;
+layer_map 15 -texttype 251 15251;
+text_layer M0_PIN;
+port -text_layer M0_PIN;
+
+layer_def M1_PIN 19251;
+layer_map 19 -texttype 251 19251;
+text_layer M1_PIN;
+port -text_layer M1_PIN;
+
+layer_def M2_PIN 2251;
+layer_map 20 -texttype 251 2251;
+text_layer M2_PIN;
+port -text_layer M2_PIN;
+
+layer_def M3_PIN 3251;
+layer_map 30 -texttype 251 3251;
+text_layer M3_PIN;
+port -text_layer M3_PIN;
+
+layer_def M4_PIN 4251;
+layer_map 40 -texttype 251 4251;
+text_layer M4_PIN;
+port -text_layer M4_PIN;
+
+layer_def M5_PIN 5251;
+layer_map 50 -texttype 251 5251;
+text_layer M5_PIN;
+port -text_layer M5_PIN;
+
+layer_def M6_PIN 6251;
+layer_map 60 -texttype 251 6251;
+text_layer M6_PIN;
+port -text_layer M6_PIN;
+
+layer_def M7_PIN 7251;
+layer_map 70 -texttype 251 7251;
+text_layer M7_PIN;
+port -text_layer M7_PIN;
+
+layer_def M8_PIN 8251;
+layer_map 80 -texttype 251 8251;
+text_layer M8_PIN;
+port -text_layer M8_PIN;
+
+layer_def M9_PIN 9251;
+layer_map 90 -texttype 251 9251;
+text_layer M9_PIN;
+port -text_layer M9_PIN;
+
+layer_def PAD_PIN 10251;
+layer_map 96 -texttype 251 10251;
+text_layer PAD_PIN;
+port -text_layer PAD_PIN;
+
+attach M0_PIN M0;
+attach M1_PIN M1;
+attach M2_PIN M2;
+attach M3_PIN M3;
+attach M4_PIN M4;
+attach M5_PIN M5;
+attach M6_PIN M6;
+attach M7_PIN M7;
+attach M8_PIN M8;
+attach M9_PIN M9;
+attach PAD_PIN pad;
+attach P_SUB_PIN psub;
+attach well_PIN nsub;
+
+and CA LIG CALIG;
+and CA LISD CALISD;
+
+connect LIG M0 -by CALIG;
+connect LISD M0 -by CALISD;
+connect M0 M1 -by V0;
+connect M1 M2 -by V1;
+connect M2 M3 -by V2;
+connect M3 M4 -by V3;
+connect M4 M5 -by V4;
+connect M5 M6 -by V5;
+connect M6 M7 -by V6;
+connect M7 M8 -by V7;
+connect M8 M9 -by V8;
+connect M9 pad -by V9;
+
+and ACTIVE SDT DIFF2SDT;
+and ACTIVE Pselect P_DIF;
+and ACTIVE Nselect N_DIF;
+not GATE GCut GATE_1;
+and GATE_1 N_DIF N_GATE_1;
+and GATE_1 P_DIF P_GATE_1;
+not N_GATE_1 Dummy N_GATE_2;
+not P_GATE_1 Dummy P_GATE_2;
+
+select -interact -not N_GATE_2 LVT N_GATE_DEV1;
+select -interact -not N_GATE_DEV1 SLVT N_GATE_DEV2;
+select -interact -not N_GATE_DEV2 SRAMVT N_GATE;
+select -interact -not P_GATE_2 LVT P_GATE_DEV1;
+select -interact -not P_GATE_DEV1 SLVT P_GATE_DEV2;
+select -interact -not P_GATE_DEV2 SRAMVT P_GATE;
+
+not N_DIF N_GATE_2 N_src_drn;
+not P_DIF P_GATE_2 P_src_drn;
+
+extent bulk;
+and bulk well nsub;
+not bulk well psub;
+connect LISD N_src_drn -by SDT;
+connect LISD P_src_drn -by SDT;
+connect LIG GATE_1;
+connect LIG LISD;
+
+and P_src_drn psub mp_cont;
+and N_src_drn nsub mn_cont;
+
+connect P_src_drn psub -by mp_cont;
+connect N_src_drn nsub -by mn_cont;
+
+select -interact -not ACTIVE Pselect n_cont;
+select -interact -not ACTIVE Nselect p_cont;
+and n_cont nsub n_cont_1;
+and p_cont psub p_cont_1;
+
+connect LISD n_cont_1 -by SDT;
+connect LISD p_cont_1 -by SDT;
+connect n_cont_1 nsub;
+connect p_cont_1 psub;
+
+device MP (pmos_rvt) P_GATE GATE_1 (G) P_src_drn (S) P_src_drn (D) nsub (B) (S D) -model "pmos_rvt"
+[property W, L, nfin
+    W=(perim_co(P_GATE,S) + perim_co(P_GATE,D))/2
+    nfin = trunc(((perim_co(P_GATE,S) + perim_co(P_GATE, D)) * 0.5)/17e-9)
+    L = (perim(P_GATE) - perim_co(P_GATE,S) - perim_in(P_GATE,S) - perim_co(P_GATE,D) - perim_in(P_GATE,D) ) * 0.5
+];
+lvs_device_type PMOS MP
+
+lvs_check_property MP(pmos_rvt) L L -tolerance 0
+lvs_check_property MP(pmos_rvt) W W -tolerance 0
+lvs_check_property MP(pmos_rvt) nfin nfin -tolerance 0
+lvs_reduce_device MP (pmos_rvt) -parallel yes [tolerance L 0 W 0 
+ effective L,W,nfin
+ W = sum(W)
+ L = min(L)
+ checkForZero = sum(nfin)
+ if (checkForZero == 0)
+ nfin = 1
+ else
+ nfin = sum(nfin)
+ ];
+
+device MN (nmos_rvt) N_GATE GATE_1 (G) N_src_drn (S) N_src_drn (D) psub (B) (S D) -model "nmos_rvt"
+[property W, L, nfin
+    W=(perim_co(N_GATE,S) + perim_co(N_GATE,D))/2
+    nfin = trunc(((perim_co(N_GATE,S) + perim_co(N_GATE, D)) * 0.5)/17e-9)
+    L = (perim(N_GATE) - perim_co(N_GATE,S) - perim_in(N_GATE,S) - perim_co(N_GATE,D) - perim_in(N_GATE,D) ) * 0.5
+];
+lvs_device_type NMOS MN
+
+lvs_check_property MN(nmos_rvt) L L -tolerance 0
+lvs_check_property MN(nmos_rvt) W W -tolerance 0
+lvs_check_property MN(nmos_rvt) nfin nfin -tolerance 0
+lvs_reduce_device MN (nmos_rvt) -parallel yes [tolerance L 0 W 0 
+ effective L,W,nfin
+ W = sum(W)
+ L = min(L)
+ checkForZero = sum(nfin)
+ if (checkForZero == 0)
+ nfin = 1
+ else
+ nfin = sum(nfin)
+ ];
+
+
+//model = mos[pmos_rvt],pmos_rvt;
+//element mos[pmos_rvt] P_GATE GATE_1 P_src_drn nsub ;
+//model = mos[nmos_rvt],nmos_rvt;
+//element mos[nmos_rvt] N_GATE GATE_1 N_src_drn psub ;

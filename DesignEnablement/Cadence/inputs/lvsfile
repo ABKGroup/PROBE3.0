@@ -1,0 +1,43 @@
+;| This script was written and developed by ABKGroup students at UCSD. However, the underlying commands and reports are copyrighted by Cadence. 
+;| We thank Cadence for granting permission to share our research to help promote and foster the next generation of innovators.
+
+;| version 1
+text text_M0 attach M0
+text text_M1 attach M1
+text text_M2 attach M2
+text text_M3 attach M3
+text text_M4 attach M4
+text text_M5 attach M5
+text text_M6 attach M6
+text text_M7 attach M7
+text text_M8 attach M8
+text text_M9 attach M9
+text text_pad attach pad
+text text_nsub attach nsub
+text text_psub attach psub
+connect LIG M0 by CALIG
+connect LISD M0 by CALISD
+connect M0 M1 by V0
+connect M1 M2 by V1
+connect M2 M3 by V2
+connect M3 M4 by V3
+connect M4 M5 by V4
+connect M5 M6 by V5
+connect M6 M7 by V6
+connect M7 M8 by V7
+connect M8 M9 by V8
+connect M9 pad by V9
+connect LISD N_src_drn by SDT
+connect LISD P_src_drn by SDT
+connect LIG Gate_1
+connect LIG LISD
+connect P_src_drn psub by mp_cont
+connect N_src_drn nsub by mn_cont
+connect LISD n_cont_1 by SDT
+connect LISD p_cont_1 by SDT
+connect n_cont_1 nsub
+connect p_cont_1 psub
+model=mos[pmos_rvt],pmos_rvt
+element mos[pmos_rvt] P_GATE Gate_1 P_src_drn nsub
+model=mos[nmos_rvt],nmos_rvt
+element mos[nmos_rvt] N_GATE Gate_1 N_src_drn psub
