@@ -123,6 +123,7 @@ Input and Output files and their locations are summarized below.
 The pinLayout format includes four sections. 
 
 1. Header
+
 The header starts with the letter "a" and includes cell name, output path (not required), width/height of placement/routing clip and tracks per placement row. The width of routing/placement is the maximum cell width. As the cell size becomes larger, the runtime may increase. Tracks per placement row is calculated as #tracks/2 + 1. For example, the cell in the example below has 4 routing tracks; the value for tracks per placement row is 4/2 + 1 = 3. 
 
 ``` shell
