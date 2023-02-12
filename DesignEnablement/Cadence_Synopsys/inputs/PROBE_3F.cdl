@@ -1,8 +1,8 @@
 * CDL netlist for PROBE3.0
 * Author: Minsoo Kim
 * Based on ASAP7 CDL netlist
-* 39 cell masters
-* AND2_{X1,X2}, AND3_{X1,X2}, AOI21_{X1,X2}, AOI22_{X1,X2}, BUF_{X1,X2,X4,X8}, DFFHQN_X1, 
+* 41 cell masters
+* AND2_{X1,X2}, AND3_{X1,X2}, AOI21_{X1,X2}, AOI22_{X1,X2}, BUF_{X1,X2,X4,X8}, DFFHQN_X1, DFFRNQ_X1, LHQ_X1,
 * INV_{X1,X2,X4,X8}, MUX2_X1, NAND2_{X1,X2}, NAND3_{X1,X2}, NAND4_{X1,X2}, NOR2_{X1,X2}, 
 * NOR3_{X1,X2}, NOR4_{X1,X2}, OAI21_{X1,X2}, OAI22_{X1,X2}, OR2_{X1,X2}, OR3_{X1,X2}, XOR2_X1
 
