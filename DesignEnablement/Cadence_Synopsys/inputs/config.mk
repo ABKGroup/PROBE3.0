@@ -16,6 +16,7 @@ export M2P = 24
 export MPO = 2
 export DR = ET
 export PGPIN = M0
+export ENC = 5
 export SITE_NAME = coresite # site name (temp)
 export CHSTR = 6
 
