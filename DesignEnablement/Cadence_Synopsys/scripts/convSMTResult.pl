@@ -172,8 +172,16 @@ while (<$in>) {
 		my $tmp = $1;
 		$line = <$in>;
 		chomp($line);
-		$line =~ s/^\s+#b(\S+)\)/$1/g;
-		$line = eval("0b$line");
+		# YW: number of fingers could be a hex number
+		if($line =~ /^\s+#x(\S+)\)/){
+			$line =~ s/^\s+#x(\S+)\)/$1/g;
+			$line = eval("0x$line");
+		}
+		else{
+			$line =~ s/^\s+#b(\S+)\)/$1/g;
+			$line = eval("0b$line");
+		}
+
 		if(exists($h_inst{$tmp})){
 			$inst[$h_inst{$tmp}][3] = $line;
 		}
