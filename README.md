@@ -108,3 +108,5 @@ For commercial EDA tools, we tested the tools with the versions below.
 ## References
 - PROBE1.0: A. Kahng, A. B. Kahng, H. Lee and J. Li, “PROBE: Placement, Routing, Back-End-of-Line Measurement Utility”, IEEE Trans. on CAD 37(7) (2018), pp. 1459-1472. [(Link)](https://vlsicad.ucsd.edu/Publications/Journals/j137.pdf)
 - PROBE2.0: C.-K. Cheng, A. B. Kahng, H. Kim, M. Kim, D. Lee, D. Park and M. Woo, “PROBE2.0: A Systematic Framework for Routability Assessment from Technology to Design in Advanced Nodes”, IEEE Trans. on CAD 41(5) (2022), pp. 1495-1508. [(Link)](https://vlsicad.ucsd.edu/Publications/Journals/j125.pdf)
+- S. Choi, J. Jung, A. B. Kahng, M. Kim, C.-H. Park, B. Pramanik, and D. Yoon, "PROBE3.0: A Systematic Framework for Design-Technology Pathfinding with Improved Design Enablement," IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, 2023, Open Access. \[[Link](https://ieeexplore.ieee.org/document/10322780)\]
+- The C++ version SMT based standard cell layout generator. \[[GitHub](https://github.com/ABKGroup/PROBE_SMT_AutoCell)\]
