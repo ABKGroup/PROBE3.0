@@ -8,24 +8,24 @@ a   Width of Placement Clip  = 21
 a   Tracks per Placement Clip = 3
 i   ===InstanceInfo===
 i   InstID Type Width
-i   ins3 PMOS 6
-i   ins2 PMOS 6
-i   ins1 NMOS 6
-i   ins0 NMOS 6
+i   insMM3 PMOS 6
+i   insMM2 PMOS 6
+i   insMM1 NMOS 6
+i   insMM0 NMOS 6
 i   ===PinInfo===
 i   PinID NetID InstID PinName PinDirection PinLength
-i   pin0 net0 ins0 D s 6
-i   pin1 net1 ins0 G s 6
-i   pin2 net2 ins0 S s 6
-i   pin3 net2 ins1 S t 6
-i   pin4 net3 ins1 G s 6
-i   pin5 net4 ins1 D s 6
-i   pin6 net5 ins2 D s 6
-i   pin7 net1 ins2 G t 6
-i   pin8 net0 ins2 S t 6
-i   pin9 net0 ins3 S t 6
-i   pin10 net3 ins3 G t 6
-i   pin11 net5 ins3 D t 6
+i   pin0 net0 insMM0 D s 6
+i   pin1 net1 insMM0 G s 6
+i   pin2 net2 insMM0 S s 6
+i   pin3 net2 insMM1 D t 6
+i   pin4 net3 insMM1 G s 6
+i   pin5 net4 insMM1 S s 6
+i   pin6 net5 insMM2 S s 6
+i   pin7 net1 insMM2 G t 6
+i   pin8 net0 insMM2 D t 6
+i   pin9 net0 insMM3 D t 6
+i   pin10 net3 insMM3 G t 6
+i   pin11 net5 insMM3 S t 6
 i   pin12 net5 ext VDD t -1 P
 i   pin13 net4 ext VSS t -1 P
 i   pin14 net1 ext A1 t -1 I
