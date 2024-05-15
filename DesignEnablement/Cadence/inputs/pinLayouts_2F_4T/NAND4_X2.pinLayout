@@ -1,47 +1,47 @@
 a   PNR Testcase Generation::  DesignName = NAND4_X2
 a   Output File:
-a   /home/eto10/PNR_PROBE/PNR_2F_4T/pinLayouts/NAND4_X2.pinLayout
-a   Width of Routing Clip    = 45
+a   /home/eto10/PNR_PROBE/PNR_3F_5T/pinLayouts/NAND4_X2.pinLayout
+a   Width of Routing Clip    = 39
 a   Height of Routing Clip   = 2
 a   Tracks per Placement Row = 3
-a   Width of Placement Clip  = 45
+a   Width of Placement Clip  = 39
 a   Tracks per Placement Clip = 2
 i   ===InstanceInfo===
 i   InstID Type Width
-i   ins7 PMOS 4
-i   ins6 PMOS 4
-i   ins5 PMOS 4
-i   ins4 PMOS 4
-i   ins3 NMOS 4
-i   ins2 NMOS 4
-i   ins1 NMOS 4
-i   ins0 NMOS 4
+i   insMM7 PMOS 4
+i   insMM6 PMOS 4
+i   insMM5 PMOS 4
+i   insMM4 PMOS 4
+i   insMM3 NMOS 4
+i   insMM2 NMOS 4
+i   insMM1 NMOS 4
+i   insMM0 NMOS 4
 i   ===PinInfo===
 i   PinID NetID InstID PinName PinDirection PinLength
-i   pin0 net0 ins3 S s 2
-i   pin1 net1 ins3 G s 2
-i   pin2 net2 ins3 D s 2
-i   pin3 net0 ins2 S t 2
-i   pin4 net3 ins2 G s 2
-i   pin5 net4 ins2 D s 2
-i   pin6 net5 ins1 S s 2
-i   pin7 net6 ins1 G s 2
-i   pin8 net4 ins1 D t 2
-i   pin9 net5 ins0 S t 2
-i   pin10 net7 ins0 G s 2
-i   pin11 net8 ins0 D s 2
-i   pin12 net9 ins7 D s 2
-i   pin13 net1 ins7 G t 2
-i   pin14 net8 ins7 S t 2
-i   pin15 net9 ins6 D t 2
-i   pin16 net3 ins6 G t 2
-i   pin17 net8 ins6 S t 2
-i   pin18 net9 ins5 D t 2
-i   pin19 net6 ins5 G t 2
-i   pin20 net8 ins5 S t 2
-i   pin21 net9 ins4 D t 2
-i   pin22 net7 ins4 G t 2
-i   pin23 net8 ins4 S t 2
+i   pin0 net0 insMM3 D s 4
+i   pin1 net1 insMM3 G s 4
+i   pin2 net2 insMM3 S s 4
+i   pin3 net0 insMM2 S t 4
+i   pin4 net3 insMM2 G s 4
+i   pin5 net4 insMM2 D s 4
+i   pin6 net5 insMM1 D s 4
+i   pin7 net6 insMM1 G s 4
+i   pin8 net4 insMM1 S t 4
+i   pin9 net5 insMM0 S t 4
+i   pin10 net7 insMM0 G s 4
+i   pin11 net8 insMM0 D s 4
+i   pin12 net9 insMM7 S s 4
+i   pin13 net1 insMM7 G t 4
+i   pin14 net8 insMM7 D t 4
+i   pin15 net9 insMM6 S t 4
+i   pin16 net3 insMM6 G t 4
+i   pin17 net8 insMM6 D t 4
+i   pin18 net9 insMM5 S t 4
+i   pin19 net6 insMM5 G t 4
+i   pin20 net8 insMM5 D t 4
+i   pin21 net9 insMM4 S t 4
+i   pin22 net7 insMM4 G t 4
+i   pin23 net8 insMM4 D t 4
 i   pin24 net9 ext VDD t -1 P
 i   pin25 net2 ext VSS t -1 P
 i   pin26 net7 ext A1 t -1 I
@@ -59,5 +59,5 @@ i   net4 2PinNet pin8 pin5
 i   net5 2PinNet pin9 pin6
 i   net6 3PinNet pin27 pin19 pin7
 i   net7 3PinNet pin26 pin22 pin10
-i   net8 6PinNet pin30 pin23 pin20 pin17 pin14 pin11
+i   net8 4PinNet pin30 pin23 pin20 pin17 pin14 pin11
 i   net9 5PinNet pin24 pin21 pin18 pin15 pin12

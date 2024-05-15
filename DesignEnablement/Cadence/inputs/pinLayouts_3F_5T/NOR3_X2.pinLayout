@@ -8,32 +8,32 @@ a   Width of Placement Clip  = 29
 a   Tracks per Placement Clip = 3
 i   ===InstanceInfo===
 i   InstID Type Width
-i   ins3 PMOS 6
-i   ins4 PMOS 6
-i   ins5 PMOS 6
-i   ins0 NMOS 6
-i   ins1 NMOS 6
-i   ins2 NMOS 6
+i   insMM3 PMOS 6
+i   insMM4 PMOS 6
+i   insMM5 PMOS 6
+i   insMM0 NMOS 6
+i   insMM1 NMOS 6
+i   insMM2 NMOS 6
 i   ===PinInfo===
 i   PinID NetID InstID PinName PinDirection PinLength
-i   pin0 net0 ins0 S s 3
-i   pin1 net1 ins0 G s 3
-i   pin2 net2 ins0 D s 3
-i   pin3 net0 ins1 S t 3
-i   pin4 net3 ins1 G s 3
-i   pin5 net2 ins1 D t 3
-i   pin6 net0 ins2 S t 3
-i   pin7 net4 ins2 G s 3
-i   pin8 net2 ins2 D t 3
-i   pin9 net0 ins3 D t 3
-i   pin10 net1 ins3 G t 3
-i   pin11 net5 ins3 S s 3
-i   pin12 net5 ins4 S t 3
-i   pin13 net3 ins4 G t 3
-i   pin14 net6 ins4 D s 3
-i   pin15 net6 ins5 S t 3
-i   pin16 net4 ins5 G t 3
-i   pin17 net7 ins5 D s 3
+i   pin0 net0 insMM0 D s 6
+i   pin1 net1 insMM0 G s 6
+i   pin2 net2 insMM0 S s 6
+i   pin3 net0 insMM1 D t 6
+i   pin4 net3 insMM1 G s 6
+i   pin5 net2 insMM1 S t 6
+i   pin6 net0 insMM2 D t 6
+i   pin7 net4 insMM2 G s 6
+i   pin8 net2 insMM2 S t 6
+i   pin9 net0 insMM3 D t 6
+i   pin10 net1 insMM3 G t 6
+i   pin11 net5 insMM3 S s 6
+i   pin12 net5 insMM4 D t 6
+i   pin13 net3 insMM4 G t 6
+i   pin14 net6 insMM4 S s 6
+i   pin15 net6 insMM5 D t 6
+i   pin16 net4 insMM5 G t 6
+i   pin17 net7 insMM5 S s 6
 i   pin18 net7 ext VDD t -1 P
 i   pin19 net2 ext VSS t -1 P
 i   pin20 net1 ext A1 t -1 I
